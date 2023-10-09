@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Primeiro_comp from './Primeiro_comp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Primeiro_comp />
     <App />
+    <Primeiro_comp />
   </React.StrictMode>
 );
 
