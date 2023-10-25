@@ -8,7 +8,7 @@ const ContainerListagem = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: cyan;
+    background-color: yellow;
 `
 
 export {TituloListagem, ContainerListagem}
