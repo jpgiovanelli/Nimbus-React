@@ -134,7 +134,7 @@ O tempo investido no desenvolvimento do programa, pelos programadores, constitui
 
 #### API´S DE MAPA
     
-O Google Maps é uma API de mapeamento amplamente utilizada e pode ser integrada ao React para visualização de dados meteorológicos.
+O Google Maps React é uma API de mapeamento amplamente utilizada e pode ser integrada ao React para visualização de dados meteorológicos.
   
   Características:
   -Facilita a criação de mapas interativos para exibir informações meteorológicas.
