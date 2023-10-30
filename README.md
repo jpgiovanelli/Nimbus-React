@@ -132,5 +132,34 @@ O tempo investido no desenvolvimento do programa, pelos programadores, constitui
 
 
 
+#### API´S DE MAPA
+    
+     -Google Maps:
+    
+O Google Maps é uma API de mapeamento amplamente utilizada e pode ser integrada ao React para visualização de dados meteorológicos.
   
+  Características:
+  -Facilita a criação de mapas interativos para exibir informações meteorológicas.
+  -Oferece recursos avançados, como geocodificação, direções e integração de Street View.
+  -Disponibilidade de bibliotecas para React, como react-google-maps.
+  -Ampla documentação e suporte para desenvolvedores.
 
+    -Mapbox:
+
+O Mapbox é conhecido por sua flexibilidade e personalização e pode ser integrado a aplicativos React para visualização de dados meteorológicos.
+
+  Características:
+  -Permite a criação de mapas personalizáveis e interativos, adequados para exibir informações meteorológicas.
+  -Suporte a recursos avançados, como mapas 3D e realidade aumentada.
+  -Pode ser usado com a biblioteca react-map-gl para integração com React.
+  -Fornece opções avançadas de estilização de mapas.
+
+    -HERE Location Services:
+
+A HERE Location Services é uma plataforma de mapeamento e pode ser integrada ao React para visualização de dados meteorológicos.
+  Características:
+  -Oferece recursos de roteamento avançado, que podem ser úteis para planejamento com base em dados meteorológicos.
+  -Possui a capacidade de criar mapas personalizáveis com camadas de dados específicas.
+  -Suporta geocodificação, direções e serviços de localização em tempo real.
+  -Integração facilitada com React por meio da biblioteca react-here-maps.
+ 
