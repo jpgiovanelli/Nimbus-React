@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Primeiro_comp from './pages/Primeiro_comp';
 import Segundo_comp from './pages/Segundo_comp';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Primeiro_comp from './pages/Primeiro_comp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

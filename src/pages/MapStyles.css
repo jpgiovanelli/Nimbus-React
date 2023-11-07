@@ -1,0 +1,15 @@
+.gm-style-mtc {
+    display: none !important;
+}
+
+.gm-fullscreen-control {
+display: none !important;
+}
+
+.gm-svpc {
+    display: none !important;
+}
+
+.map-marker > label {
+    margin-top: -30px;
+}
