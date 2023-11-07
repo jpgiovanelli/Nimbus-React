@@ -139,12 +139,10 @@ O Google Maps React é uma API de mapeamento amplamente utilizada e pode ser int
   Características:
   -Facilita a criação de mapas interativos para exibir informações meteorológicas.
   
-  -Oferece recursos avançados, como geocodificação, direções e integração de Street View.
-  
   -Disponibilidade de bibliotecas para React, como react-google-maps.
   
   -Ampla documentação e suporte para desenvolvedores.
-  
+-----------------------------------------------------
 A escolha foi Baseada em diversos fatores, tais como :
 
 Popularidade e Adoção Generalizada: O Google Maps é uma das plataformas de mapas mais populares e amplamente utilizadas em todo o mundo.
