@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Segundo_comp from './pages/Segundo_comp';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Primeiro_comp from './pages/Primeiro_comp';
+import { Listagem } from './components/Listagem/Listagem';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,8 +14,6 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Primeiro_comp />}></Route>
-        <Route path='segundo' element={<Segundo_comp />}></Route>
-        <Route path='app' element={<App />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

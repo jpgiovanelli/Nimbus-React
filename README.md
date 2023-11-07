@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+Link Inicial https://github.com/jpgiovanelli/Projeto.FrontEnd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Nimbus - Projeto Front-end
+Projeto dedicado em formar uma pagina eficiente e bem apresentável
 
-## Available Scripts
+## 1. Objetivos do projeto:
+Utilizar das tecnologias aprendidas em sala (git, react) para realizar em grupo uma página protótipo para a empresa de metereologia Nimbus, simulando um trabalho feito
+para um cliente real com as ferramentas ensinadas.
 
-In the project directory, you can run:
+## 2. Sobre o sistema:
 
-### `npm start`
+#### O sistema será utilizado por:
+  - Engenheiros  
+  - Mestres de obras  
+  - Setor financeiro e de planejamento
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Como serão consumidos os dados:
+  - End-point das APIs 
+    - JSON  
+    - CSV   
+    
+  -> JSON: Estrutura de dados em par chave:valor  
+  -> CSV: Arquivo de dados separado por vírgula
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Propósito do sistema:
+O sistema fornece recursos essenciais para a análise de dados meteorológicos. Permite o download de relatórios personalizados em diferentes formatos, facilitando a análise. Os usuários podem visualizar pontos no mapa, incluindo estações e áreas, e comparar dados de várias estações simultaneamente. Gráficos dinâmicos que se ajustam a diferentes dispositivos e tabelas detalhadas. A interação entre componentes é intuitiva. Em resumo, é uma ferramenta completa para análise de dados meteorológicos, com flexibilidade e interatividade.
 
-### `npm test`
+#### 5W2H
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### O quê?
+O sistema processa informações meteorológicas, incluindo dados de radares que monitoram as condições das nuvens em tempo real.
 
-### `npm run build`
+#### Por quê?
+O sistema é feito com o propósito de oferecer previsões baseadas em equações físicas e matemáticas, facilitando o planejamento de projetos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Quem?
+O sistema será utilizado principalmente por empresas e profissionais envolvidos em planejamento, engenharia e meteorologia que contratam o serviço.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Quando?
+O sistema será utilizado pelo cliente dependendo do horário desejado, podendo ser em tempo real ou previamente planejado.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Como?
+O sistema permite que o usuário solicite os dados por meio de um formulário, os quais são obtidos através de uma API e posteriormente exportados em um formato de tabela.
 
-### `npm run eject`
+#### Onde?
+O sistema é aplicado em situações que envolvem o planejamento de obras e em pesquisas relacionadas à meteorologia.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Quanto?
+O tempo investido no desenvolvimento do programa, pelos programadores, constitui um aspecto relevante em termos de recursos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Requisitos Funcionais:
+  - O sistema deve disponibilizar o download de relatórios personalizados em diferentes formatos (.csv, .pdf e .png)  
+  - O sistema deve ter a visualização de pontos pré-configurados no mapa (marcadores de estacões e áreas)
+  - O sistema deve ter a visualização de dados de estações simultâneas selecionadas no mapa  
+  - O sistema deve ter gráficos dinâmicos e ajustáveis em diferentes dispositivos
+  - O sistema daverá ser oferecido em diferentes tamanhos de telas
+  - O sistema deve ter tabelas com dados
+  - O sistema deve ter interação entre os componentes
+  - O sistema deve incorporar e exibir os dados meteorológicos, bem como as equações matemáticas e físicas pertinentes, na tela principal.
+  - O Sistema irá possuir um formulário que considera uma série de critério de filtro, tais como: Data inicial, data final, tipo de variável metereológica, ponto de monitoramento.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Requisitos não-funcionais:
+  - A página deve ter um tempo de carregamento rápido
+  - O Design do sistema precisa ser responsivo
+  - O sistema deve ter acessibildade para mobile
+  - O sistema deve fazer requisições na API disponibilizada
+  - O sistema deve tratar o json vindo do End-Point da API
+  - Sistema será versionado no GitHub
+  - Sistema feito no REACT (Framework JS)
 
-## Learn More
+## 3. Casos de uso
+  - 1º Caso:
+    - Nome: Geração de Relatórios de Dados Meteorológicos
+    - Ator Principal: Usuário (Engenheiros, Mestres de obras, Setor financeiro e de planejamento)
+    - Pré-Condições:
+      - O usuário está logado no sistema.
+      - O setor financeiro deve ter acesso aos dados climáticos históricos.
+      - A plataforma deve fornecer ferramentas para criar relatórios detalhados.  
+        
+    - Fluxo Básico:
+      
+      - O usuário acessa a opção de "Gerar Relatórios de Dados Meteorológicos" no sistema.
+      
+      - O sistema apresenta opções para configurar o relatório, como seleção do período de tempo e tipos de dados a serem incluídos.
+       
+      - O usuário configura as opções do relatório.
+      
+      - O sistema gera o relatório de acordo com as configurações.
+      
+      - O usuário pode fazer o download do relatório no formato desejado (por exemplo, CSV ou PDF).
+         
+    
+    - Pós-Condições:
+      - O usuário possui um relatório de dados meteorológicos para fins de análise financeira e planejamento orçamentário.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - 2º Caso :
+    - Caso de Uso: Exportar Dados Meteorológicos
+    - Ator Principal: Usuário do sistema (Engenheiros, Mestres de obras, Setor financeiro e de planejamento)
 
-### Code Splitting
+    - Objetivo: Permitir que o usuário exporte dados meteorológicos em diferentes formatos (JSON, CSV) para análises ou relatórios externos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    - Pré-condições:
+      - O usuário está autenticado no sistema.
+      - O usuário já realizou uma consulta de dados meteorológicos ou configurou os filtros desejados.
+     
+        
+    - Fluxo Principal:
 
-### Analyzing the Bundle Size
+      - O usuário realiza uma consulta de dados meteorológicos no sistema, configurando os filtros de acordo com suas necessidades.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+      - Após visualizar os dados na tela principal, o usuário decide exportar os dados para análise externa.
 
-### Making a Progressive Web App
+      - O sistema exibe a opção de exportação de dados em diferentes formatos, incluindo JSON e CSV.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+      - O usuário seleciona o formato desejado para a exportação (por exemplo, CSV).
 
-### Advanced Configuration
+      - O sistema gera um arquivo no formato escolhido, contendo os dados meteorológicos de acordo com os filtros aplicados.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+      - O sistema disponibiliza o arquivo gerado para download.
 
-### Deployment
+      
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    - Fluxo Alternativo:
 
-### `npm run build` fails to minify
+      - No passo 4, se o usuário decidir cancelar a exportação, o caso de uso é encerrado sem gerar um arquivo.
+      
+    - Pós-condições:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      - O usuário obtém um arquivo exportado contendo os dados meteorológicos conforme solicitado.
+
+
+
+#### API´S DE MAPA
+    
+O Google Maps React é uma API de mapeamento amplamente utilizada e pode ser integrada ao React para visualização de dados meteorológicos.
+  
+  Características:
+  -Facilita a criação de mapas interativos para exibir informações meteorológicas.
+  
+  -Oferece recursos avançados, como geocodificação, direções e integração de Street View.
+  
+  -Disponibilidade de bibliotecas para React, como react-google-maps.
+  
+  -Ampla documentação e suporte para desenvolvedores.
+  
+--------------------------------------------------------------------------------
+O Mapbox é conhecido por sua flexibilidade e personalização e pode ser integrado a aplicativos React para visualização de dados meteorológicos.
+
+  Características:
+  -Permite a criação de mapas personalizáveis e interativos, adequados para exibir informações meteorológicas.
+  
+  -Suporte a recursos avançados, como mapas 3D e realidade aumentada.
+  
+  -Pode ser usado com a biblioteca react-map-gl para integração com React.
+  
+  -Fornece opções avançadas de estilização de mapas.
+  
+--------------------------------------------------------------------------------
+A HERE Location Services é uma plataforma de mapeamento e pode ser integrada ao React para visualização de dados meteorológicos.
+
+  Características:
+  -Oferece recursos de roteamento avançado, que podem ser úteis para planejamento com base em dados meteorológicos.
+  
+  -Possui a capacidade de criar mapas personalizáveis com camadas de dados específicas.
+  
+  -Suporta geocodificação, direções e serviços de localização em tempo real.
+  
+  -Integração facilitada com React por meio da biblioteca react-here-maps.
+ 
