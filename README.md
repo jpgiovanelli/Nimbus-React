@@ -145,27 +145,16 @@ O Google Maps React é uma API de mapeamento amplamente utilizada e pode ser int
   
   -Ampla documentação e suporte para desenvolvedores.
   
---------------------------------------------------------------------------------
-O Mapbox é conhecido por sua flexibilidade e personalização e pode ser integrado a aplicativos React para visualização de dados meteorológicos.
+A escolha foi Baseada em diversos fatores, tais como :
 
-  Características:
-  -Permite a criação de mapas personalizáveis e interativos, adequados para exibir informações meteorológicas.
-  
-  -Suporte a recursos avançados, como mapas 3D e realidade aumentada.
-  
-  -Pode ser usado com a biblioteca react-map-gl para integração com React.
-  
-  -Fornece opções avançadas de estilização de mapas.
-  
---------------------------------------------------------------------------------
-A HERE Location Services é uma plataforma de mapeamento e pode ser integrada ao React para visualização de dados meteorológicos.
+Popularidade e Adoção Generalizada: O Google Maps é uma das plataformas de mapas mais populares e amplamente utilizadas em todo o mundo.
 
-  Características:
-  -Oferece recursos de roteamento avançado, que podem ser úteis para planejamento com base em dados meteorológicos.
-  
-  -Possui a capacidade de criar mapas personalizáveis com camadas de dados específicas.
-  
-  -Suporta geocodificação, direções e serviços de localização em tempo real.
-  
-  -Integração facilitada com React por meio da biblioteca react-here-maps.
- 
+Documentação e Suporte Abundantes: O Google Maps tem uma documentação extensa e bem organizada, juntamente com uma comunidade ativa de desenvolvedores. 
+
+Funcionalidades Avançadas: O Google Maps oferece uma ampla gama de funcionalidades avançadas, como integração com Street View, rotas otimizadas, informações sobre locais de interesse, integração com serviços Google, e muito mais.
+
+Ecossistema Google: Se a aplicação já faz uso de outros serviços do Google, como o Google Cloud Platform, a integração com o Google Maps pode ser mais direta e coesa.
+
+Gratuidade para Uso Básico: Para muitos desenvolvedores e pequenas empresas, o uso básico do Google Maps é gratuito, o que pode ser uma consideração importante em termos de custos.
+
+Estabilidade e Confiabilidade: O Google Maps é mantido por uma das maiores empresas de tecnologia do mundo, o que significa que é provável que continue a ser uma opção estável e confiável a longo prazo.
