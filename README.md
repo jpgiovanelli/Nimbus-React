@@ -142,8 +142,9 @@ O Google Maps React é uma API de mapeamento amplamente utilizada e pode ser int
   -Disponibilidade de bibliotecas para React, como react-google-maps.
   
   -Ampla documentação e suporte para desenvolvedores.
+  
 -----------------------------------------------------
-A escolha foi Baseada em diversos fatores, tais como :
+#### A escolha foi Baseada em diversos fatores, tais como :
 
 Popularidade e Adoção Generalizada: O Google Maps é uma das plataformas de mapas mais populares e amplamente utilizadas em todo o mundo.
 
