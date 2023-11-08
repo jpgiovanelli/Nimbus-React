@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
+import styled from "styled-components";
 import { Input } from "./style"
 import './MapStyles.css';
 
 const Primeiro_comp = () => {
+
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: 'AIzaSyCCMOIQ531QdncjyHtAgNecv7zhF6ARKoA',
@@ -12,7 +14,7 @@ const Primeiro_comp = () => {
         streetViewControl: false,
     });
 
-    const [positions, setPositions] = useState([{ lat: -22.95, lng: -42.97 }]);
+    const [positions, setPositions] = useState([{ lat: -22.95, lng: -42.97 }]);    
 
     const mapOptions = {
         styles: [
@@ -232,7 +234,7 @@ const Primeiro_comp = () => {
                 "featureType": "road.local",
                 "stylers": [
                 {
-                    "visibility": "off"
+                    "visibility": "on"
                 }
                 ]
             },
@@ -241,7 +243,7 @@ const Primeiro_comp = () => {
                 "elementType": "labels",
                 "stylers": [
                 {
-                    "visibility": "off"
+                    "visibility": "on"
                 }
                 ]
             },
@@ -326,6 +328,13 @@ const Primeiro_comp = () => {
     const center = calcular_centro()
 
 
+    const [selectedMarker, setMarker] = useState('')
+
+    const fechar_info = () => {
+        if (selectedMarker == '') return
+        setMarker('')
+    }
+
     return (
         <div className='mapa'>
         {isLoaded ? (
@@ -334,18 +343,56 @@ const Primeiro_comp = () => {
             center={center}
             zoom={15}
             options={{ styles: mapOptions.styles }}
+            onDrag={fechar_info}
+            onClick={fechar_info}
             >
             {positions.map((position, index) => (
-                <Marker key={index} position={position} />
+                <Marker key={index} position={position} onClick={e => setMarker({location: {lat: e.latLng.lat() + 0.001, lng: e.latLng.lng()}})} />
             ))}
             <Location setPositions={setPositions} />
+            {
+                selectedMarker &&
+                <InfoWindow position={selectedMarker.location}>
+                    <div>
+                        <h1>Informações:</h1>
+                        <p>(...)</p>
+                        <p>(...)</p>
+                        <p>(...)</p>
+                    </div>
+                </InfoWindow>
+            }
             </GoogleMap>
+            
         ) : <></>}
         </div>
     );
 };
 
 const Location = ({ setPositions }) => {
+
+    const coordenates = () => {
+        const cep = document.getElementById('cep').value
+        const key = 'AIzaSyCCMOIQ531QdncjyHtAgNecv7zhF6ARKoA'
+
+        const url = `https://maps.googleapis.com/maps/api/geocode/json?key=${key}&address=${cep}`
+
+        const promise = fetch(url)
+
+        promise.then(response => response.json()).then(location => {
+            try {
+                const lat_lng = location.results[0].geometry.location
+                setLat(lat_lng.lat)
+                setLng(lat_lng.lng)
+            } catch (error) {
+                alert('O endereço não é válido! Tente novamente.')
+                setLat(Lat)
+                setLng(Lng)
+            }
+            
+})
+
+    }
+
     const [Lat, setLat] = useState(-22.95);
     const [Lng, setLng] = useState(-42.97);
 
@@ -356,11 +403,18 @@ const Location = ({ setPositions }) => {
     }, [Lat, Lng, setPositions]);
 
     return (
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div className='lat-lng' style={{ position: 'relative', zIndex: 1, marginTop: 17, height: 25}}>
         <Input type='number' value={Lat} step={0.01} onChange={(e) => (setLat(parseFloat(e.target.value)))}></Input>
         <Input type='number' value={Lng} step={0.01} onChange={(e) => (setLng(parseFloat(e.target.value)))}></Input>
         </div>
+        <div className='endereco' style={{ position: 'relative', zIndex: 1}}>
+        <Input id='cep' type='text' placeholder='Coloque aqui um endereco ou CEP:' style={{width: 220}}></Input>
+        <button onClick={coordenates}>Pesquisar</button>
+        </div> 
+        </div>
     );
 };
+
 
 export default Primeiro_comp;
