@@ -405,8 +405,8 @@ const Location = ({ setPositions }) => {
     return (
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <div className='lat-lng' style={{ position: 'relative', zIndex: 1, marginTop: 17, height: 25}}>
-        <Input type='number' value={Lat} step={0.01} onChange={(e) => (setLat(parseFloat(e.target.value)))}></Input>
-        <Input type='number' value={Lng} step={0.01} onChange={(e) => (setLng(parseFloat(e.target.value)))}></Input>
+        <Input type='number' value={Lat} step={0.001} onChange={(e) => (setLat(parseFloat(e.target.value)))}></Input>
+        <Input type='number' value={Lng} step={0.001} onChange={(e) => (setLng(parseFloat(e.target.value)))}></Input>
         </div>
         <div className='endereco' style={{ position: 'relative', zIndex: 1}}>
         <Input id='cep' type='text' placeholder='Coloque aqui um endereco ou CEP:' style={{width: 220}}></Input>
