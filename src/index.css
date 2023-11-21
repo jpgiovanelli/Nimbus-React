@@ -5,10 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: rgb(162, 148, 68);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#botoes > button{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.header {
+  background-color: rgb(255, 229, 195);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menulateral {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
