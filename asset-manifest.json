@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nimbus-React/static/css/main.ec46d7bb.css",
+    "main.js": "/Nimbus-React/static/js/main.31399243.js",
+    "static/js/787.7803a8a5.chunk.js": "/Nimbus-React/static/js/787.7803a8a5.chunk.js",
+    "index.html": "/Nimbus-React/index.html",
+    "main.ec46d7bb.css.map": "/Nimbus-React/static/css/main.ec46d7bb.css.map",
+    "main.31399243.js.map": "/Nimbus-React/static/js/main.31399243.js.map",
+    "787.7803a8a5.chunk.js.map": "/Nimbus-React/static/js/787.7803a8a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec46d7bb.css",
+    "static/js/main.31399243.js"
+  ]
+}
