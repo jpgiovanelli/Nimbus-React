@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Primeiro_comp from './pages/NewPage.jsx';
+import NewPage from './pages/NewPage.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Primeiro_comp />}></Route>
+        <Route path='/' element={<NewPage />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
