@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<NewPage />}></Route>
+        <Route path='/Nimbus-React' element={<NewPage />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
